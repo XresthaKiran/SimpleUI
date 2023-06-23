@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go/screen/LogPage.dart';
+import 'package:go/screen/catalog1.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -53,6 +54,17 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => LogInPage()));
+            },
+          ),
+          ListTile(
+            leading: Icon(CupertinoIcons.bag),
+            title: Text(
+              'Products',
+              textScaleFactor: 1.3,
+            ),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Catalog()));
             },
           ),
         ],

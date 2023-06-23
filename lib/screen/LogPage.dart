@@ -36,7 +36,6 @@ class _LogInPageState extends State<LogInPage> {
                   Padding(
                     padding: const EdgeInsets.all(20.0),
                     child: TextFormField(
-                      
                       validator: (text) {
                         if (text == null || text.isEmpty) {
                           return 'Username can not be empty';
@@ -103,17 +102,14 @@ class _LogInPageState extends State<LogInPage> {
                                     Text('Username or Password is incorrect')));
                       }
                     },
-                    
                     child: Text(
                       'Login',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white),
-                          
                     ),
                     style: ButtonStyle(
-                      shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)) )
-                    
-                    ),
+                        shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(4)))),
                   )
                 ],
               ),
